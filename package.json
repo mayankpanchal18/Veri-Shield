@@ -1,0 +1,15 @@
+{
+  "name": "verishield-ppt-aligned",
+  "private": true,
+  "version": "2.0.0",
+  "description": "AI-Based Fake Identity & Document Screening System — Detect, Review, Verify",
+  "scripts": {
+    "dev": "concurrently -n CLIENT,API -c cyan,green \"npm run dev --prefix client\" \"python -m uvicorn app.main:app --reload --app-dir server --port 8000\"",
+    "dev:client": "npm run dev --prefix client",
+    "dev:api": "python -m uvicorn app.main:app --reload --app-dir server --port 8000",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

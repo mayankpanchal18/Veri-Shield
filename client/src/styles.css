@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #0B1F44; background: #F6F8FC; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(circle at 90% 8%, rgba(22,191,229,.10), transparent 28%), #F6F8FC; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+.gradient-rule { background: linear-gradient(90deg, #5866F2 0%, #16BFE5 50%, #43E864 100%); }
+.glass { background: rgba(255,255,255,.84); backdrop-filter: blur(18px); border: 1px solid rgba(21,51,107,.10); }
+.ppt-grid { background-image: linear-gradient(rgba(21,51,107,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(21,51,107,.035) 1px, transparent 1px); background-size: 32px 32px; }
+.hex { clip-path: polygon(25% 6.7%,75% 6.7%,100% 50%,75% 93.3%,25% 93.3%,0 50%); }
+.status-dot { width: 8px; height: 8px; border-radius: 999px; display: inline-block; }
+.risk-ring { background: conic-gradient(var(--ring) calc(var(--score) * 1%), #E9EEF7 0); }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 999px; border: 3px solid #F6F8FC; }

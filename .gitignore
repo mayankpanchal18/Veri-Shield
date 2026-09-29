@@ -1,0 +1,35 @@
+node_modules/
+client/dist/
+server/.env
+server/data/*.db
+server/data/.dev_aes_key
+server/data/evidence/*
+!server/data/evidence/.gitkeep
+blockchain/artifacts/
+blockchain/cache/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Runtime data, logs, and editor files
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.log
+.pytest_cache/
+.coverage
+coverage/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
